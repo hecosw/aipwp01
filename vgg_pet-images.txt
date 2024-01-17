@@ -331,4 +331,4 @@ Number of 'Not-a' Dog Images: 10
 Real:                     beagle   Classifier:  walker hound, walker foxhound
 Real:             great pyrenees   Classifier:                         kuvasz
 
-** Total Elapsed Runtime: 0:0:3
+** Total Elapsed Runtime: 0:0:2

@@ -73,19 +73,19 @@ def calculates_results_stats(results_dic):
     n_correct_notdogs = 0
     n_correct_breed = 0
 
-    for key in results_dic:
-        if results_dic[key][2] == 1:
+    for value in results_dic.values():
+        if value[2] == 1:
             n_match += 1
 
-        if results_dic[key][3] == 1:
+        if value[3] == 1:
             n_dogs_img += 1
-            if results_dic[key][4] == 1:
+            if value[4] == 1:
                 n_correct_dogs += 1
-            if results_dic[key][2] == 1:
+            if value[2] == 1:
                 n_correct_breed += 1
         else:
             n_notdogs_img += 1
-            if results_dic[key][4] == 0:
+            if value[4] == 0:
                 n_correct_notdogs += 1
 
     pct_match = (n_match / n_images) * 100 if n_images > 0 else 0
